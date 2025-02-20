@@ -1,3 +1,10 @@
+'''Use to determine if one or more arguments is of a certain type
+
+if validateInput(arglist,type) == False:
+    pass
+else:
+    whatever
+'''
 def validateInput(arglist, type):
         if type == int:
             try:
@@ -13,3 +20,5 @@ def validateInput(arglist, type):
             except:
                 return False
             return arglist
+        else:
+            return False

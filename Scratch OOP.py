@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 #re-entro to OOP
 
 
@@ -158,12 +159,16 @@ print(family)
 Polymorphism
 '''
 
-from abc import abc, abstractmethod
+from abc import ABC, abstractmethod
 
 class Shape(ABC): 
     @abstractmethod  #<----forces child classes to define this method
     def area(self):
         pass
 
+# total = 0
+# x = [[i for i in "ASDFASDFASDFASDFASDF"] for z in "ASDFASDF"]
+# for key in tqdm(x):
+#     total +=1
+# print(total)
 
-    
