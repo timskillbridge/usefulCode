@@ -2,9 +2,10 @@ import time
 import random
 import sys
 import subprocess
-subprocess.run('clear',shell=True)
 
-def random_populate():
+
+def grid3x3():
+    subprocess.run('clear',shell=True)
 
     list_of_nums = [0,1,2,3,4,5,6,7,8,9]
     fill_list = ["x"]*(len(list_of_nums))
@@ -58,4 +59,4 @@ def random_populate():
 # random_populate()
 
 if __name__ == "__main__":
-    random_populate()
+    rand_populate()

@@ -451,7 +451,7 @@ def clc():      # <----  The acutal calculator
     termios.tcsetattr(sys.stdin, termios.TCSADRAIN, terminalSettings)  # <----  restore terminal settings
     # bigPrint(printline)
 
-clc()  # <----  run the calculator
+# clc()  # <----  run the calculator
 
 
 # if for some reason, the program crashes, it is possible the terminal settings will be set to collect and display raw data ... not great
@@ -471,3 +471,5 @@ termios.tcgetattr(sys.stdin) = copied print line
 # this should be required, I think I got all the bugs out. . . famous last words.
 
 
+if __name__ == "__main__":
+    pass
