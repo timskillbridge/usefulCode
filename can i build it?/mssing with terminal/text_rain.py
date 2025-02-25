@@ -4,6 +4,8 @@ import random
 import sys
 import subprocess
 
+
+
 def text_rain(text):
     fill_list = [" " for x in text]
     text_order = [int(x) for x in range(len(text))]
@@ -23,4 +25,9 @@ def text_rain(text):
 
     print(f" {"".join(fill_list)}")
 
-text_rain(" The random group of letters in this sentence might not print correctly")
+# text_rain(" The random group of letters in this sentence might not print correctly")
+
+
+if __name__ == "__main__":
+    arg = sys.argv[1]
+    text_rain(arg)

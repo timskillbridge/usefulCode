@@ -24,7 +24,7 @@ def random_populate():
     for x,y in enumerate(list_of_nums):
         # print(f"{x} {y}\n")
         fill_list[y] = list_of_nums[y]
-        time.sleep(.9)
+        time.sleep(.3)
         
         # [7, 2, 0, 9, 4, 3, 8, 6, 5, 1]
         # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -55,4 +55,7 @@ def random_populate():
             sys.stdout.write('\u001b[1B')
 
         sys.stdout.flush()
-random_populate()
+# random_populate()
+
+if __name__ == "__main__":
+    random_populate()
