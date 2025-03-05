@@ -253,7 +253,7 @@ def bigPrint(chars, color=False):   # <----  method to read list, grab dictionar
 choiceList = ['quit','clear',0,1,2,3,4,5,6,7,8,9,"+",'-','/',"*",'=','dotshow']  # <---- list representing each option, datshow is shorter than the actual one we use below.
 
 
-bigPrint(choiceList)  # <----  print the menu
+# bigPrint(choiceList)  # <----  print the menu
 
 def pointer(pointlist):  # <---- navigate the printed menu with a pointer
     
@@ -263,9 +263,12 @@ def pointer(pointlist):  # <---- navigate the printed menu with a pointer
     sys.stdout.write('\r\x1b[K')  # <---- clears the current line
     bigPrint(pointlist)  # <---- calls bigprint above using the pointer location
 
-pointer(['point'])  # <---- prints the inital pointer at the starting location
+# pointer(['point'])  # <---- prints the inital pointer at the starting location
 
 def clc():      # <----  The acutal calculator 
+    choiceList = ['quit','clear',0,1,2,3,4,5,6,7,8,9,"+",'-','/',"*",'=','dotshow']
+    bigPrint(choiceList)
+    pointer(['point'])
     operand = ""
     printline = []
     preline = []

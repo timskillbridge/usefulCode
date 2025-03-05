@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header-text">
+        <h1>JS DOM</h1>
+    </div>
+    <div id="container" class="container">
+    </div>
+    <button onclick="createCard()">
+        generate card
+    </button>
+
+    <div id="img-container">
+        <button id="img-view" onclick="showImg()">Show Image</button>
+    </div>
+
+    <div class="formholder">
+        <ul id="put-here"> </ul>
+
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" class="fav-color" name = "name" placeholder="favorite color">
+                <input type="text" class="fav-name" namae = "color" placeholder="favorite name">
+                <input type="submit">
+            </form>
+       
+    </div>
+
+    <div id="form-output">
+
+    </div>
+
+    <div class="main">
+        <input id="user-input" type="text" placeholder="write your name">
+        <button onclick="submitName()">Submit</button>
+        <p id="output"></p>
+        <p class="classic-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facere modi autem dolorem nesciunt
+            praesentium, id aliquam amet quis repellendus, aliquid non dignissimos animi odit veniam nihil
+            necessitatibus perspiciatis et!
+        </p>
+        <p class="classic-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facere modi autem dolorem nesciunt
+            praesentium, id aliquam amet quis repellendus, aliquid non dignissimos animi odit veniam nihil
+            necessitatibus perspiciatis et!
+        </p>
+
+        <p class="classic-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facere modi autem dolorem nesciunt
+            praesentium, id aliquam amet quis repellendus, aliquid non dignissimos animi odit veniam nihil
+            necessitatibus perspiciatis et!
+        </p>
+
+    </div>
+
+
+    <div class="footer">
+        <h2>
+            this is a footer
+        </h2>
+
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>

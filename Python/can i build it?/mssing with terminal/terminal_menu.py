@@ -2,7 +2,7 @@
                                                         ###################################
                                                         ##        NEEDED IMPORTS         ##
                                                         ###################################
-import sys, subprocess, termios, tty, readline, importlib
+import sys, subprocess, termios, tty, readline, importlib, os
 #sys        -needed to access the sys.stdout.write and associated functions
 #termios    -needed to restore terminal functionality from just receiving raw input and displaying raw output
 #tty        -needed to solicit raw input
@@ -74,7 +74,15 @@ def navigate_menu(list_options:list, list_menu_methods:list=[]):
 ###################################
                 tempname = list_menu_methods[nav-1]         # - save typing later
 
-                module_name = tempname[0:tempname.index(".")]   # - Define module name dynamically by parsing argument, then create a module object to call later
+                module_name = tempname[0:tempname.index(".")]
+
+                if module_name[0] == '*':                                                   #Import from a directory up
+                    working_directory = os.path.dirname(os.path.abspath(__file__))          #
+                    parent_dir = os.path.dirname(working_directory)                         #
+                    sys.path.insert(0,parent_dir)                                           #
+                    module_name = module_name[1:]                                           #
+                
+                       # - Define module name dynamically by parsing argument, then create a module object to call later
                 mod = importlib.import_module(module_name)      #  
 
                 if "(" in tempname:                                                             # - '(' was in the parsed argument
