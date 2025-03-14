@@ -1,0 +1,80 @@
+
+#container {
+  border: dashed red 2px;
+  width:500px;
+  height: 50px;
+  position:relative;
+  overflow-y: scroll;
+}
+
+.box{
+  border: dashed blue 2px;
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  display:inline-block;
+  
+}
+
+#theBox {
+  background-color: tan;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+#outer{
+  display: inline-block;
+  background-color: blue;
+  height:250px;
+  width:250px;
+  margin-top: 150px;
+}
+
+.nested {
+  height:50%;
+  width:50%;
+  display:inline-block;
+
+}
+
+#middle {
+  background-color: green;
+  position: relative
+}
+
+#inner {
+  background-color: red;
+  position:absolute;
+
+}
+
+.p {
+  clear:right;
+}
+
+#pokeImg {
+  float:right;
+}
+
+.box:hover{
+  background-color: bisque;
+  height: 55px;
+  width:55px;
+}
+
+
+
+#box1{
+  display:inline-block;
+  border: 1px solid black;
+  height: 25vmin;
+  height:25vmin;
+}
+
+#box2 {
+  display: inline-block;
+  border:1px dashed red;
+  height: 75vmin;
+  width:75vmin
+}

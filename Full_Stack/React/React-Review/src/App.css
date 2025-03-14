@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+.container-div{
+    position:relative;
+    border:1px black solid;
+    display:flex;
+    min-height: 17px;
+    max-width: 17px;
+    background-color: rgb(225,225,225)
+}
+.top-goldStar {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid gold;
+
+
+}
+
+.bottom-goldStar{
+
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid gold;
+    position: absolute;
+    transform:rotateX(180deg);
+    top:2.5px;
+
+}
+
+.top-Star {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid black;
+
+
+
+}
+
+.bottom-Star{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid black;
+    position: absolute;
+    transform:rotateX(180deg);
+    top:2.5px;
+    
+}
+

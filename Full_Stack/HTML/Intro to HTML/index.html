@@ -1,0 +1,123 @@
+<!-- Opening HTML required tags -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./index.css">
+    <title>
+        Intro HTML
+    </title>
+</head>
+
+<body>
+    <div>
+        <!-- Headers -->
+        <h1>
+            Header 1 is the largest
+        </h1>
+        <div>
+            <h3>
+                image
+            </h3>
+            <img src="https://avatars.githubusercontent.com/u/185715276?v=4" alt="My big mug">
+        </div>
+        <h2>
+            Header for info
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit eveniet eius temporibus soluta
+            accusamus nihil consectetur ipsam porro explicabo hic repellendus voluptate odio, consequuntur voluptatibus
+            error impedit placeat? Mollitia.
+        </p>
+        <!-- line breaks are self closing -->
+        <br />
+        <h2>
+            Header<span></span>for info <strong>2</strong>
+        </h2>
+        <p>
+            <!--
+                <u> underlines
+                <em> is italics
+                <strong> is bold
+                -->
+            Lorem <u>ipsum</u> dolor sit amet<em>consectetur adipisicing elit</em>. Iusto corporis voluptatum recusandae
+            nulla distinctio similique alias est natus? Voluptatem in delectus perferendis et labore, molestiae natus
+            ipsa quod dignissimos reprehenderit?
+        </p>
+    </div>
+    <div>
+        <h2>
+            input form
+        </h2>
+        <form>
+            <!-- nesting forms within a forms tag allow the enter button to submit instead of requiring a user to click submit -->
+            <input type="text" name="name" placeholder="placeholder">
+            <input type="color">
+            <input type="date">
+            <input type="radio">
+            <input type="checkbox">
+            <input type="submit">
+        </form>
+    </div>
+    <br>
+    <div>
+        <!-- target = _blank opens a new window -->
+        <a href="http://www.github.com" target="_blank">github</a>
+    </div>
+    <br>
+    <div>
+        <h2>
+            lists
+        </h2>
+        <ul>Unordered lists
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <ul>Sub-unordered list
+                <li>s1</li>
+                <li>s2</li>
+            </ul>
+            <li>4</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <ol>Ordered list
+            <li>1</li>
+            <li>2</li>
+            <ol>Sub ordered list
+                <li>s1</li>
+                <li>s2</li>
+            </ol>
+        </ol>
+    </div>
+    <div>
+        <a href="./side page.html">Side page</a>
+    </div>
+    <div id="box_container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <br><br>
+    <div class = "margin">
+        Margin
+        <div class = "border">
+            Border
+            <div class = "padding">
+                Padding
+                <div class = "content">
+                    Content
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- semantics adds decoration for other developers to help them read and understand it-->
+
+</body>
+
+</html>

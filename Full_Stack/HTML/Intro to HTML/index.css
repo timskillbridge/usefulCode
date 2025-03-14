@@ -1,0 +1,53 @@
+
+/* rock paper scisors of overwriting styling */
+/* element < class < id < in-line */
+
+/* Element styling */
+p {
+    color:red;
+    font-size : 10px;
+    
+}
+
+/* Class styling */
+.box {
+    border:1px black solid;
+    height: 20px;
+    width: 20px;
+}
+
+/* element styling */
+#box_container {
+    border: 5px blue dashed;
+    height: 50px;
+    width: 50px;
+}
+
+.margin {
+    text-align: center;
+    margin : 20px;
+    padding:20px;
+    background-color: lightblue;
+}
+.border {
+    text-align: center;
+    border:5px black dotted;
+    background-color: lightgreen;
+}
+
+.padding {
+    padding:20px;
+    border:1px blue dashed;
+    padding: 20px;
+    margin:30px;
+    background-color: grey;
+}
+
+.content {
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    border: 2px red solid;
+    background-color: rosybrown;
+}
