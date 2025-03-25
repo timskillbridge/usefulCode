@@ -1,0 +1,34 @@
+
+*{
+    box-sizing: border-box;
+}
+#searchForm{
+    display:inline-block;
+    min-width:30em;
+    max-width: 30em;
+    width: 30em;
+    padding:1em;
+}
+
+#displayMon{
+    display:inline-flex;
+    height: 15em;
+    min-width: 14em;
+    border:blue solid 1px;
+    margin:0px 0px 0px 1em;
+    justify-content: center;
+}
+
+#imgContainer{
+    display:flex;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    align-self: top;
+    padding:0px;
+    margin:0px;
+ }
+ .fadeOut{
+    transition: 1s scale(.2);
+ }
+
